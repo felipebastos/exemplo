@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "ambiente"
+version = "0.1.0"
+description = ""
+authors = ["Felipe Bastos Nunes <felipebastos@ifce.edu.br>"]
+readme = "README.md"
+packages = [{include = "ambiente", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.16.2"
+black = "^23.1.0"
+pytest = "^7.2.1"
+pytest-cov = "^4.0.0"
+pip-audit = "^2.4.14"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
